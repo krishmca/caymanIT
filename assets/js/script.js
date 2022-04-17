@@ -92,7 +92,9 @@ jQuery(function ($) {
     if($('.about-sec').length) {
         var about_target = $('#about-sec').offset().top;
     }
-
+    if($('.services-sec').length) {
+        var about_target = $('#services-sec').offset().top;
+    }
     jQuery ( document ).ready ( function($) {
 
         var hash= window.location.hash;
@@ -113,6 +115,15 @@ jQuery(function ($) {
            }
        }
         if (hash === "#about-sec") {
+            var new_heights = about_target - 951;
+            if (target.length) {
+                $('html,body').stop().animate({
+                    scrollTop: new_heights   //offsets for fixed header
+                }, 'linear');
+
+            }
+        }
+        if (hash === "#services-sec") {
             var new_heights = about_target - 951;
             if (target.length) {
                 $('html,body').stop().animate({

@@ -403,8 +403,8 @@ header .top-social-links li a:hover i{
 
 /*main navigation*/
 header .simple-nav-logo{
-    background-color: #1c1c1c;
-    padding: 30px 10px 30px 10px;
+    background-color: #fcfafa;
+    padding: 25px 5px 25px 5px;
     margin-right: 0;
     text-align: center;
     position: relative;
@@ -414,7 +414,7 @@ header .fixed-nav-logo{
     display: none;
 }
 header .navbar-brand img{
-    max-width: 80%;
+    max-width: 90%;
 }
 header .main-navigation{
     padding-top: 30px;
@@ -929,7 +929,7 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #a8a8a8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1259,6 +1259,96 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
     border-color: #FFFFFF;
 }
 
+
+/* ===================================
+      SERVICES
+  ==================================== */
+  .services-sec{
+    padding-top: 10px;
+    /* background-color:#ff6f00; */
+}
+.services-sec .serv-heading-area{
+    background-color:#554c86;
+    color: #FFFFFF;
+    font-family: Oswald, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.services-sec .serv-heading-area h4{ 
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.services-sec .about-overlay{
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: 60%;
+    background-color:#554c86;
+}
+.services-sec .services-area{
+    /*background-color:#554c86;*/
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.services-sec .services-area .purple-overlay{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    left: 0;
+    background-color:#554c86;
+}
+.services-sec .services-area .services{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.services-sec .services-area .services .service-card{
+    margin-bottom: 100px;
+}
+.services-sec .services-area .services:last-child .service-card,.services-sec .services-area .services:nth-child(3) .service-card{
+    margin-bottom: 0;
+}
+.services-sec .services-area .services .service-card .icon-holder{
+    margin-bottom: 12px;
+    transition: .5s ease;
+}
+.services-sec .services-area .services .service-card .icon-holder i{
+    color: #FFFFFF;
+    font-size: 100px;
+}
+.services-sec .services-area .services:hover .service-card .icon-holder{
+    animation: .8s pulse infinite;
+    /*transform: translateY(-10px);*/
+}
+
+.services-sec .services-area .services .service-card .card-heading{
+    color: #FFFFFF;
+    font-size: 28px;
+    font-family: Oswald, sans-serif;
+    font-weight: 300;
+    transition: .5s ease;
+    margin-bottom: 20px;
+}
+.services-sec .services-area .services .service-card .card-descrip{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Oswald, sans-serif;
+    font-weight: 300;
+    transition: .5s ease;
+    padding: 0px 15px;
+}
 /***********************************/
 /***********PORTFOLIO CSS***********/
 /***********************************/
@@ -2440,6 +2530,9 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
     }
     .side-nav .navbar-nav .nav-link {
         font-size: 30px;
+    }
+    #services-sec .container{
+        max-width:1340px;
     }
 }
 @media (min-width: 1600px) {
